@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Manuela Vidal</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logoManuelaVidal.png" alt="Logo Manuela Vidal">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/mtavidal"> GitHub </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/manuela-vidal/"> LinkedIn</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:manuela.andion@gmail.com"> Email</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1> Manuela Vidal</h1>
+                <h5> Programadora em Formação</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <img id="animation" src="arrow.png" alt="seta">
+            </div>     
+            
+            <div style="display: none" class="flex" id="about">
+                <div>
+                    <img src="foto_jaleco.png" alt="foto pessoal">
+                    <p>    
+                    Estudante do Curso Tecnólogo em Análise e Desenvolvimento de Sistemas  
+                    do Centro Universitário Senac - previsão de conclusão em 07/2024. 
+                    </p>
+                </div>
+                   
+                <div>
+                    <img style="margin-top: 30px; margin-bottom: 10px; " src="tecnologias.png" alt="tecnologias">
+                    <p>
+                    Nos últimos anos realizou cursos na área de Tecnologia da informação com foco no desenvolvimento de software,
+                    com ênfase nessas tecnologias. 
+                    </p>
+                </div>                
+            </div>
+            
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email :)">
+                    <button>Enviar</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+            arrow.classList.toggle('animationOff');
+        }
+    </script>
+
+</body>
+</html>
